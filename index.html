@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:linear-gradient(#0e153fc7, #ffa500b3), url("images/quiz.jpg") no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #quiz-container {
+            background-color: #ffffffb3;
+
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 40%;
+        }
+        .question {
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .answer {
+            display: block;
+            margin-bottom: 10px;
+            margin: auto;
+            text-align: center;
+        }
+        #next-btn, #submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Quiz</h1>
+        <div id="question-container">
+            <div id="question" class="question"></div>
+            <div id="answers"></div>
+        </div>
+        <button id="next-btn" style="display: none;">Next</button>
+        <button id="submit-btn" style="display: none;">Submit</button>
+        <div id="result"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
